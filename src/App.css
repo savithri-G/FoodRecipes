@@ -1,0 +1,65 @@
+.card {
+  height: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* App.css */
+.blurred-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.blurred-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./bg.jpg'); /* Adjust the path accordingly */
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(6px); /* Adjust the blur level as needed */
+  z-index: -1; /* Place it behind the content */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: rgb(11, 12, 82); /* Adjust text color based on your background */
+  margin-top: 70px; /* Adjust margin to avoid overlap */
+}
+.forms
+{
+  width: 50%;
+
+}
+.forms:focus{
+  background-color: rgb(218, 198, 243);
+  border: none;
+  border-style: none;
+}
+
+.btn{
+  padding: 5px 30px;
+  background-color: rgb(11, 12, 82);
+  color: #fff;
+  font-family: '"Merienda", cursive';
+  font-size:20px;
+  border: none;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: #ddcbf3;
+  color: rgb(11, 12, 82);
+}
+
+
+@media screen and (min-width: 991px){
+  
+}
